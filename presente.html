@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentes</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            background-color: #f8f8f8;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            max-width: 1200px;
+            width: 100%;
+        }
+        .product {
+            background-color: #fff;
+            border: 2px solid purple;
+            border-radius: 5px;
+            padding: 10px;
+            text-align: center;
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.8); /* Aumenta a sombra */
+        }
+        img {
+            width: 100%;
+            height: auto;
+            border: 2px solid purple;
+            border-radius: 5px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7); /* Aumenta a sombra */
+        }
+        .price {
+            font-size: 1.2em;
+            color: #333;
+            margin: 10px 0;
+        }
+        .buy-button {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .buy-button:hover {
+            background-color: #218838;
+            border: 2px solid purple;
+        }
+        .message {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 20px;
+            border-radius: 5px;
+            display: none;
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bem Vindo caro Convidado!</h1>
+    <div class="grid-container">
+        <div class="product">
+            <img src="presente/academia.jpg" alt="Produto 1">
+            <h2>Um mês de Academia</h2>
+            <p class="price">R$ 99,99</p>
+            <button class="buy-button" onclick="copyLink('00020126330014br.gov.bcb.pix011107748137331520400005303986540599.995802BR5925FRANCISCO FRANSNEOIR COST6009Sao Paulo62290525REC6823E9A400ABC94838198963045D63')">Presentear</button>
+        </div>
+        <div class="product">
+            <img src="presente/celular.jpg" alt="Produto 2">
+            <h2>Pacerla do iphone</h2>
+            <p class="price">R$122,54</p>
+            <button class="buy-button" onclick="copyLink('00020126330014br.gov.bcb.pix0111077481373315204000053039865406122.545802BR5925FRANCISCO FRANSNEOIR COST6009Sao Paulo62290525REC682403D48E30702960360463048F70')">Presentear</button>
+        </div>
+        <div class="product">
+            <img src="presente/gato.jpg" alt="Produto 3">
+            <h2>Cuidados para com o Gato</h2>
+            <p class="price">R$166,99</p>
+            <button class="buy-button" onclick="copyLink('00020126330014br.gov.bcb.pix0111077481373315204000053039865406166.995802BR5925FRANCISCO FRANSNEOIR COST6009Sao Paulo62290525REC682404D07851D23615170163045DC4')">Presentear</button>
+        </div>
+        <div class="product">
+            <img src="presente/wifi.jpg" alt="Produto 4">
+            <h2>Internet</h2>
+            <p class="price">R$99,99</p>
+            <button class="buy-button" onclick="copyLink('00020126330014br.gov.bcb.pix011107748137331520400005303986540599.995802BR5925FRANCISCO FRANSNEOIR COST6009Sao Paulo62290525REC6823E9A400ABC94838198963045D63')">Presentear</button>
+        </div>
+        <div class="product">
+            <img src="presente/manga.jpg" alt="Produto 5">
+            <h2>Manga Attack on Tintas</h2>
+            <p class="price">R$154,90</p>
+            <button class="buy-button" onclick="copyLink('00020126330014br.gov.bcb.pix0111077481373315204000053039865406154.905802BR5925FRANCISCO FRANSNEOIR COST6009Sao Paulo62290525REC68240529B261C55497772163043145')">Presentear</button>
+        </div>
+        <div class="product">
+            <img src="presente/shein.jpg" alt="Produto 6">
+            <h2>Carrinho da shein</h2>
+            <p class="price">R$220,66</p>
+            <button class="buy-button" onclick="copyLink('00020126330014br.gov.bcb.pix0111077481373315204000053039865406220.665802BR5925FRANCISCO FRANSNEOIR COST6009Sao Paulo62290525REC68240646E26824461322886304EB6F')">Presentear</button>
+        </div>
+        <div class="product">
+            <img src="presente/uruçui.jpg" alt="Produto 7">
+            <h2>Passagem Para uruçui</h2>
+            <p class="price">R$114,43</p>
+            <button class="buy-button" onclick="copyLink('00020126330014br.gov.bcb.pix0111077481373315204000053039865406114.435802BR5925FRANCISCO FRANSNEOIR COST6009Sao Paulo62290525REC682406EBC95C88269710336304821D')">Presentear</button>
+        </div>
+        <div class="product">
+            <img src="presente/filtro.jpg" alt="Produto 8">
+            <h2>filtro de barro</h2>
+            <p class="price">R$ 88,99</p>
+            <button class="buy-button" onclick="copyLink('00020126330014br.gov.bcb.pix011107748137331520400005303986540588.995802BR5925FRANCISCO FRANSNEOIR COST6009Sao Paulo62290525REC68240731EAC624272905246304D2DF')">Presentear</button>
+        </div>
+        <div class="product">
+            <img src="presente/jeri.jpg" alt="Produto 9">
+            <h2>Lua de Mel</h2>
+            <p class="price">R$132,94</p>
+            <button class="buy-button" onclick="copyLink('00020126330014br.gov.bcb.pix0111077481373315204000053039865406132.945802BR5925FRANCISCO FRANSNEOIR COST6009Sao Paulo62290525REC6824075B4B66708859747063040B5F')">Presentear</button>
+        </div>
+        <div class="product">
+            <img src="presente/bruno.jpg" alt="Produto 10">
+            <h2>Show do Bruno & Marrone</h2>
+            <p class="price">R$ 99,99</p>
+            <button class="buy-button" onclick="copyLink('00020126330014br.gov.bcb.pix011107748137331520400005303986540599.995802BR5925FRANCISCO FRANSNEOIR COST6009Sao Paulo62290525REC6823E9A400ABC94838198963045D63')">Presentear</button>
+        </div>
+    </div>
+    <div class="message" id="copyMessage">Link de pagamento copiado!</div>
+
+    <script>
+        function copyLink(link) {
+            navigator.clipboard.writeText(link).then(() => {
+                const message = document.getElementById('copyMessage');
+                message.style.display = 'block';
+                setTimeout(() => {
+                    message.style.display = 'none';
+                }, 3000);
+            }).catch(err => {
+                console.error('Erro ao copiar o link: ', err);
+            });
+        }
+    </script>
+</body>
+</html>

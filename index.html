@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem em Tela Cheia</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden; /* Evita rolagem */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            position: relative; /* Necessário para posicionamento absoluto dos filhos */
+        }
+        img#background {
+            width: 100vw; /* Largura total da viewport */
+            height: 100vh; /* Altura total da viewport */
+            object-fit: cover; /* Cobre a área sem distorção */
+            position: absolute; /* Fixa a imagem de fundo */
+            top: 0;
+            left: 0;
+        }
+        .small-images {
+            position: absolute; /* Permite que as imagens pequenas fiquem sobre a imagem de fundo */
+            top: 70%; /* Ajuste para posicionar abaixo do centro */
+            display: flex;
+            justify-content: center; /* Centraliza horizontalmente */
+            width: 100%; /* Largura total para centralizar */
+        }
+        .small-images a {
+            margin: 0 15px; /* Espaçamento entre as imagens */
+        }
+        .small-images img {
+            width: 100px; /* Largura fixa das imagens pequenas */
+            height: 100px; /* Altura fixa para manter as mesmas dimensões */
+            object-fit: cover; /* Cobre a área sem distorção */
+            border-radius: 75px; /* Arredonda as bordas */
+        }
+    </style>
+</head>
+<body>
+    <img id="background" src="prafundo.jpeg" alt="Descrição da imagem de fundo">
+    <div class="small-images">
+        <a href="https://www.google.com/maps/place/R.+Manoel+Francisco+de+Amorim,+154,+Esperantina+-+PI,+64180-000/@-3.9052133,-42.2455098,17z/data=!3m1!4b1!4m6!3m5!1s0x792b887f9d96b51:0xb37d2042e55aeefd!8m2!3d-3.9052133!4d-42.2455098!16s%2Fg%2F11jsj1wxz5?entry=ttu&g_ep=EgoyMDI1MDUxMi4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+            <img src="click2.jpeg" alt="Imagem 1">
+        </a>
+        <a href="presente.html" target="_blank">
+            <img src="click3.jpeg" alt="Imagem 2">
+        </a>
+    </div>
+</body>
+</html>
